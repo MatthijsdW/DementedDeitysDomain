@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amplitude: 1
-  frequency: 0.0005
-  seed: 543
+  frequency: 0.005
+  seed: 314
 --- !u!4 &466721777
 Transform:
   m_ObjectHideFlags: 0
@@ -206,6 +206,9 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 0d9d93f84387dd44aafe327b050e1cfa, type: 3}
   - {fileID: 2800000, guid: e0d0d887a5e15d94c85868ca94e502fa, type: 3}
   - {fileID: 2800000, guid: fdf9f8d685d2b38439832286057aeaea, type: 3}
+  player: {fileID: 2060197901}
+  tileRadius: 3
+  updateSeconds: 0.5
 --- !u!4 &480813276
 Transform:
   m_ObjectHideFlags: 0
@@ -220,6 +223,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &563649563 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2868762160256090452, guid: 356e1f8dde529bf4fb677070a393a723, type: 3}
+  m_PrefabInstance: {fileID: 2868762159539091370}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &563649569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563649563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5835cfabcbda4f74685933b3cc6c3d55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,6 +444,7 @@ GameObject:
   - component: {fileID: 1793792774}
   - component: {fileID: 1793792776}
   - component: {fileID: 1793792777}
+  - component: {fileID: 1793792778}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -492,6 +513,18 @@ MonoBehaviour:
   aggroRadius: 3
   moveSpeed: 1
   fireRate: 0.1
+--- !u!114 &1793792778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793792773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5835cfabcbda4f74685933b3cc6c3d55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1859879093
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,6 +570,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2060197901 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2868762159342274419, guid: 356e1f8dde529bf4fb677070a393a723, type: 3}
+  m_PrefabInstance: {fileID: 2868762159539091370}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2868762159539091370
 PrefabInstance:
   m_ObjectHideFlags: 0

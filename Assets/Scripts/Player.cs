@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     public float movementSpeed;
     public float fireRate;
 
+    public float terrainSpeedModifier;
+
     private Vector3 moveDirection;
     private bool firing;
     private float lastFireTime;
@@ -27,6 +29,19 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        switch (BiomeMap.instance.GetBiomeAt(playerHolder.position.x, playerHolder.position.z))
+        {
+            case Biome.Water:
+                terrainSpeedModifier = 0.7f;
+                break;
+            case Biome.DeepWater:
+                terrainSpeedModifier = 0.4f;
+                break;
+            default:
+                terrainSpeedModifier = 1f;
+                break;
+        }
+
         if (firing && fireRate < Time.time - lastFireTime)
         {
             RaycastHit hit;
@@ -50,7 +65,7 @@ public class Player : MonoBehaviour
             transform.forward = moveDirection;
             transform.Rotate(Vector3.up, Camera.main.transform.eulerAngles.y);
 
-            playerHolder.Translate(transform.forward * moveDirection.magnitude * movementSpeed * Time.deltaTime);
+            playerHolder.Translate(transform.forward * moveDirection.magnitude * movementSpeed * terrainSpeedModifier * Time.deltaTime);
         }
     }
 }
