@@ -5,6 +5,9 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    public static Player instance;
+    public CharacterStats playerStats;
+
     public GameObject projectilePrefab;
     public Transform playerHolder;
     public float movementSpeed;
@@ -27,7 +30,13 @@ public class Player : MonoBehaviour
         firing = context.ReadValue<float>() > 0;
     }
 
-    void Update()
+    private void Start()
+    {
+        instance = this;
+        playerStats = GetComponent<CharacterStats>();
+    }
+
+    private void Update()
     {
         switch (BiomeMap.instance.GetBiomeAt(playerHolder.position.x, playerHolder.position.z))
         {
@@ -53,6 +62,7 @@ public class Player : MonoBehaviour
                 Vector3 direction = (hit.point - Vector3.up * 0.5f - transform.position).normalized;
 
                 GameObject projectile = Instantiate(projectilePrefab);
+                projectile.GetComponent<Projectile>().damage = playerStats.power;
                 projectile.transform.position = position + direction * 0.4f;
                 projectile.transform.forward = direction;
             }

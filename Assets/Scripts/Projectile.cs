@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    public float damage;
     public float shotSpeed;
     public float range;
     public bool enemy;
@@ -28,13 +29,17 @@ public class Projectile : MonoBehaviour
     {
         if (enemy && other.CompareTag("Player"))
         {
+            CharacterStats playerStats = other.GetComponent<CharacterStats>();
+            if (playerStats != null)
+                playerStats.TakeDamage(damage);
             Destroy(gameObject);
-            Destroy(other.gameObject);
         }
         if (!enemy && other.CompareTag("Enemy"))
         {
+            CharacterStats enemyStats = other.GetComponent<CharacterStats>();
+            if (enemyStats != null)
+                enemyStats.TakeDamage(damage);
             Destroy(gameObject);
-            Destroy(other.gameObject);
         }
     }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class SimpleAI : MonoBehaviour
@@ -7,23 +8,29 @@ public class SimpleAI : MonoBehaviour
     public GameObject projectilePrefab;
     public float aggroRadius = 1;
     public float moveSpeed = 1;
-    public float fireRate;
+    public float attackSpeed = 1;
+    public float damage;
 
     private State state;
     private float wanderTime;
     private float wanderDistance;
     private GameObject player;
+    private CharacterStats stats;
     private float lastFireTime;
 
-    // Start is called before the first frame update
+    private List<ListSkill> skillList = new List<ListSkill>();
+
     void Start()
     {
         player = FindObjectOfType<Player>().transform.parent.gameObject;
+        stats = GetComponent<CharacterStats>();
         wanderTime = Time.time + Random.Range(2, 5);
         state = State.Idle;
+
+        skillList.Add(new ListSkill(ScriptableObject.CreateInstance<ShootArrow>()));
+        skillList.Add(new ListSkill(ScriptableObject.CreateInstance<ThrowBomb>()));
     }
 
-    // Update is called once per frame
     void Update()
     {
         switch (state)
@@ -37,6 +44,11 @@ public class SimpleAI : MonoBehaviour
             case State.Aggroed:
                 AttackPlayer();
                 break;
+        }
+
+        foreach (ListSkill skill in skillList)
+        {
+            skill.Cooldown -= Time.deltaTime;
         }
     }
 
@@ -70,21 +82,28 @@ public class SimpleAI : MonoBehaviour
 
     private void AttackPlayer()
     {
-        transform.forward = (player.transform.position - transform.position).normalized;
-        transform.Translate(transform.forward * moveSpeed * Time.deltaTime, Space.World);
+        Vector3 playerLocation = player.transform.position;
+        float playerDistance = (playerLocation - transform.position).magnitude;
+        Vector3 playerDirection = (playerLocation - transform.position).normalized;
 
-
-        if (fireRate < Time.time - lastFireTime)
+        transform.forward = playerDirection;
+        if (skillList.Any(x => x.Skill.PreferredRange < playerDistance))
         {
-            Vector3 position = transform.position + Vector3.up * 0.5f;
-            Vector3 direction = (player.transform.position - transform.position).normalized;
+            transform.Translate(transform.forward * moveSpeed * Time.deltaTime, Space.World);
+        }
 
-            GameObject projectile = Instantiate(projectilePrefab);
-            projectile.transform.position = position + direction * 0.4f;
-            projectile.transform.forward = direction;
-            projectile.GetComponent<Projectile>().enemy = true;
-
-            lastFireTime = Time.time;
+        foreach (ListSkill skill in skillList)
+        {
+            if (skill.Cooldown <= 0)
+            {
+                if ((playerLocation - transform.position).magnitude <= skill.Skill.PreferredRange)
+                {
+                    Vector3 position = transform.position + Vector3.up * 0.5f;
+                    Vector3 targetPosition = player.transform.position + Vector3.up * 0.5f;
+                    skill.Skill.UseSkill(stats, position, targetPosition);
+                    skill.Cooldown = skill.Skill.Cooldown;
+                }
+            }
         }
     }
 
