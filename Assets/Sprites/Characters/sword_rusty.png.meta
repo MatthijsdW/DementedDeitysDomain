@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: da60f501ea210324e843f4e2bec34454
+guid: 01358f91901cb9249a6ceb529ad0b353
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -38,7 +38,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 0
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -100,23 +100,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dummy_0
+      name: sword_rusty_0
       rect:
         serializedVersion: 2
         x: 1
@@ -130,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71c337f1819360049ba6983dd63590a7
-      internalID: -1227415749
+      spriteID: e7aafeaf67b2f794b907ccc1831f69dc
+      internalID: 907422583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dummy_1
+      name: sword_rusty_1
       rect:
         serializedVersion: 2
         x: 25
@@ -151,56 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c00afe672611dc04eaa273407ae11d70
-      internalID: -848347377
+      spriteID: 3ee0959deed129d46881dadd27a79879
+      internalID: 1161715013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dummy_2
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 55
-        width: 22
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d331ecc1661a7147b34a3c49547413a
-      internalID: -1893030206
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dummy_3
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 55
-        width: 22
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 773e4b10a6e8db240800985491dc3eb3
-      internalID: 32138000
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dummy_4
+      name: sword_rusty_2
       rect:
         serializedVersion: 2
         x: 1
@@ -214,14 +160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5c8330c209d40649b7fabb26d183502
-      internalID: 2044056066
+      spriteID: a8bef97c677f57c49b7b4a713ea6a67d
+      internalID: -296257318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dummy_5
+      name: sword_rusty_3
       rect:
         serializedVersion: 2
         x: 25
@@ -235,56 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b579916eaf8f574ea57cd9b11256efd
-      internalID: 404547063
+      spriteID: c0d075385ed061c41bff96e81c897053
+      internalID: 394819013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dummy_6
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 37
-        width: 22
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16ea71a6bf0d7804f92af7fa743125ea
-      internalID: -1121006390
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dummy_7
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 37
-        width: 22
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e3fad564ec96d6a4d8753ccba811d46e
-      internalID: 938090635
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dummy_8
+      name: sword_rusty_4
       rect:
         serializedVersion: 2
         x: 1
@@ -298,14 +202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 554d0da4fc808164197dd123ca642a8b
-      internalID: 1242699527
+      spriteID: eb52d003cfb7a5c479d2724ed19aaadb
+      internalID: 1629917404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dummy_9
+      name: sword_rusty_5
       rect:
         serializedVersion: 2
         x: 25
@@ -319,56 +223,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 352c03c3c4c088841a41a1a559e73386
-      internalID: -1013285229
+      spriteID: 2c22c8d09e457ba438131646108fcbbd
+      internalID: 165008773
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dummy_10
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 19
-        width: 22
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6209d6d8bf7ab6649ba0d38b6b7bc1a5
-      internalID: 1407316670
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dummy_11
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 19
-        width: 22
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5503377e4ce78b84b8d78c8ec354a28d
-      internalID: 807930222
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dummy_12
+      name: sword_rusty_6
       rect:
         serializedVersion: 2
         x: 1
@@ -382,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f9905c439196a845a5cc6b63684f860
-      internalID: 116465601
+      spriteID: 5ab08b4ef8f50284c91a9ae9a032019a
+      internalID: 296328840
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dummy_13
+      name: sword_rusty_7
       rect:
         serializedVersion: 2
         x: 25
@@ -403,50 +265,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5610fbe5e58df1d4b81a23b70152b88b
-      internalID: 1813180552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dummy_14
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 1
-        width: 22
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bfe8f5d0f8dbc6d4da9d2bd644d041b3
-      internalID: 85059197
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dummy_15
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 1
-        width: 22
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac715e50db6c4b34f93d4a338af36773
-      internalID: 430126164
+      spriteID: 527c004d97cc0c04898b66f620607710
+      internalID: 963649314
       vertices: []
       indices: 
       edges: []
@@ -454,7 +274,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 61e3c9b446057424cad06479ef3d6682
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -462,22 +282,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dummy_3: 32138000
-      dummy_8: 1242699527
-      dummy_10: 1407316670
-      dummy_2: -1893030206
-      dummy_6: -1121006390
-      dummy_1: -848347377
-      dummy_5: 404547063
-      dummy_9: -1013285229
-      dummy_15: 430126164
-      dummy_7: 938090635
-      dummy_14: 85059197
-      dummy_13: 1813180552
-      dummy_4: 2044056066
-      dummy_11: 807930222
-      dummy_0: -1227415749
-      dummy_12: 116465601
+      sword_rusty_0: 907422583
+      sword_rusty_1: 1161715013
+      sword_rusty_7: 963649314
+      sword_rusty_2: -296257318
+      sword_rusty_6: 296328840
+      sword_rusty_5: 165008773
+      sword_rusty_4: 1629917404
+      sword_rusty_3: 394819013
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

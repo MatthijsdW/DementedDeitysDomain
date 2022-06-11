@@ -13,11 +13,14 @@ public class Player : MonoBehaviour
     public float movementSpeed;
     public float fireRate;
 
+    [System.NonSerialized]
     public float terrainSpeedModifier;
 
     private Vector3 moveDirection;
     private bool firing;
     private float lastFireTime;
+    private ActionSpriteController actionSpriteController;
+
 
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -34,6 +37,7 @@ public class Player : MonoBehaviour
     {
         instance = this;
         playerStats = GetComponent<CharacterStats>();
+        actionSpriteController = GetComponentInChildren<ActionSpriteController>();
     }
 
     private void Update()
@@ -65,17 +69,23 @@ public class Player : MonoBehaviour
                 projectile.GetComponent<Projectile>().damage = playerStats.power;
                 projectile.transform.position = position + direction * 0.4f;
                 projectile.transform.forward = direction;
+
+                if (actionSpriteController != null)
+                {
+                    actionSpriteController.TriggerAnimation(fireRate / 2);
+                }
             }
 
             lastFireTime = Time.time;
         }
 
-        if (moveDirection.magnitude > 0)
+        playerStats.CurrentMovementSpeed = moveDirection.magnitude * movementSpeed * terrainSpeedModifier;
+        if (playerStats.CurrentMovementSpeed > 0)
         {
             transform.forward = moveDirection;
             transform.Rotate(Vector3.up, Camera.main.transform.eulerAngles.y);
 
-            playerHolder.Translate(transform.forward * moveDirection.magnitude * movementSpeed * terrainSpeedModifier * Time.deltaTime);
+            playerHolder.Translate(transform.forward * playerStats.CurrentMovementSpeed * Time.deltaTime);
         }
     }
 }

@@ -33,6 +33,7 @@ public class SimpleAI : MonoBehaviour
 
     void Update()
     {
+        stats.CurrentMovementSpeed = 0;
         switch (state)
         {
             case State.Idle:
@@ -74,8 +75,9 @@ public class SimpleAI : MonoBehaviour
             return;
         }
 
-        transform.Translate(transform.forward * moveSpeed * Time.deltaTime, Space.World);
-        wanderDistance -= moveSpeed * Time.deltaTime;
+        stats.CurrentMovementSpeed = moveSpeed;
+        transform.Translate(transform.forward * stats.CurrentMovementSpeed * Time.deltaTime, Space.World);
+        wanderDistance -= stats.CurrentMovementSpeed * Time.deltaTime;
 
         DetectPlayer();
     }
@@ -89,7 +91,8 @@ public class SimpleAI : MonoBehaviour
         transform.forward = playerDirection;
         if (skillList.Any(x => x.Skill.PreferredRange < playerDistance))
         {
-            transform.Translate(transform.forward * moveSpeed * Time.deltaTime, Space.World);
+            stats.CurrentMovementSpeed = moveSpeed;
+            transform.Translate(transform.forward * stats.CurrentMovementSpeed * Time.deltaTime, Space.World);
         }
 
         foreach (ListSkill skill in skillList)

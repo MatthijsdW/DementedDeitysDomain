@@ -1,55 +1,7 @@
 fileFormatVersion: 2
-guid: 23748c298f885bf4c89671f6d30f562b
+guid: 5d7eec2d02e755a4f8d3fa9a1f0648eb
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -6598946016331564889
-    second: Down 0
-  - first:
-      213: -7675304248189546062
-    second: Down 1
-  - first:
-      213: -6388338761078672736
-    second: Down 2
-  - first:
-      213: -303320121775701381
-    second: Down 3
-  - first:
-      213: 7043811978007918041
-    second: Up 0
-  - first:
-      213: -7723253972256136601
-    second: Up 1
-  - first:
-      213: -1137364592071911362
-    second: Up 2
-  - first:
-      213: -3549988229105279555
-    second: Up 3
-  - first:
-      213: 2249745419088220813
-    second: Right 0
-  - first:
-      213: 5333771517180107481
-    second: Right 1
-  - first:
-      213: -646623592477257922
-    second: Right 2
-  - first:
-      213: 5856893256139009897
-    second: Right 3
-  - first:
-      213: 3729461876300729580
-    second: Left 0
-  - first:
-      213: -672529477206987394
-    second: Left 1
-  - first:
-      213: 5629586733242638167
-    second: Left 2
-  - first:
-      213: 7767812757204367948
-    second: Left 3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -86,15 +38,15 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 0
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 7
-  spritePivot: {x: 0.5, y: 0}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -114,7 +66,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 256
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -126,10 +78,10 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 256
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -137,23 +89,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 256
+    buildTarget: Server
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 256
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -164,12 +104,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Down 0
+      name: bow_wood_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 51
-        width: 16
+        x: 1
+        y: 55
+        width: 22
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -178,19 +118,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a8f3949f85db64a0800000000000000
-      internalID: -6598946016331564889
+      spriteID: e9b07e721374e0f41a1aeb961e147be8
+      internalID: -284777981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Down 1
+      name: bow_wood_1
       rect:
         serializedVersion: 2
-        x: 17
-        y: 51
-        width: 16
+        x: 25
+        y: 55
+        width: 22
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -199,19 +139,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b19d97a377db7590800000000000000
-      internalID: -7675304248189546062
+      spriteID: 63aaddd862a156e45826ff1276054ba1
+      internalID: -232191234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Down 2
+      name: bow_wood_2
       rect:
         serializedVersion: 2
-        x: 34
-        y: 51
-        width: 16
+        x: 49
+        y: 55
+        width: 22
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -220,19 +160,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a2fb016ebf0857a0800000000000000
-      internalID: -6388338761078672736
+      spriteID: 35aa3eecbec88204fac6fe39d67f3372
+      internalID: -100033590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Down 3
+      name: bow_wood_3
       rect:
         serializedVersion: 2
-        x: 51
-        y: 51
-        width: 16
+        x: 1
+        y: 37
+        width: 22
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -241,19 +181,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b72c450d4f36acbf0800000000000000
-      internalID: -303320121775701381
+      spriteID: 08579481a00240144ab8b665b3b80c72
+      internalID: -1593046955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Up 0
+      name: bow_wood_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 34
-        width: 16
+        x: 25
+        y: 37
+        width: 22
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -262,19 +202,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d5bdcd9ca5a0c160800000000000000
-      internalID: 7043811978007918041
+      spriteID: c8fa8019463387f43a54dc378b6dd659
+      internalID: 677228359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Up 1
+      name: bow_wood_5
       rect:
         serializedVersion: 2
-        x: 17
-        y: 34
-        width: 16
+        x: 49
+        y: 37
+        width: 22
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -283,19 +223,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7626c898e6d71d490800000000000000
-      internalID: -7723253972256136601
+      spriteID: 12dac34b2c8ba3c4cbb5235e0925b1d1
+      internalID: 1543019395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Up 2
+      name: bow_wood_6
       rect:
         serializedVersion: 2
-        x: 34
-        y: 34
-        width: 16
+        x: 1
+        y: 19
+        width: 22
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -304,19 +244,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e385275fde44730f0800000000000000
-      internalID: -1137364592071911362
+      spriteID: 8bee91c2a6317054c9067c30630bba90
+      internalID: -1968997592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Up 3
+      name: bow_wood_7
       rect:
         serializedVersion: 2
-        x: 51
-        y: 34
-        width: 16
+        x: 25
+        y: 19
+        width: 22
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -325,19 +265,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbd9c57a388ebbec0800000000000000
-      internalID: -3549988229105279555
+      spriteID: 248a7d83832cc134ca18cb7be39076a4
+      internalID: -1700944288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right 0
+      name: bow_wood_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 17
-        width: 16
+        x: 49
+        y: 19
+        width: 22
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -346,19 +286,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d82d0dbf983b83f10800000000000000
-      internalID: 2249745419088220813
+      spriteID: 871271b526625a645a772f080488d5df
+      internalID: -2082845845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right 1
+      name: bow_wood_9
       rect:
         serializedVersion: 2
-        x: 17
-        y: 17
-        width: 16
+        x: 1
+        y: 1
+        width: 22
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -367,19 +307,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9dadd927fec550a40800000000000000
-      internalID: 5333771517180107481
+      spriteID: 2e282207cb8abc946be7cde50cdc8218
+      internalID: -1415349352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right 2
+      name: bow_wood_10
       rect:
         serializedVersion: 2
-        x: 34
-        y: 17
-        width: 16
+        x: 25
+        y: 1
+        width: 22
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -388,19 +328,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3f8103c44bb607f0800000000000000
-      internalID: -646623592477257922
+      spriteID: 297e90220df583e4ca4d100d05b3ec4f
+      internalID: 1485772054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right 3
+      name: bow_wood_11
       rect:
         serializedVersion: 2
-        x: 51
-        y: 17
-        width: 16
+        x: 49
+        y: 1
+        width: 22
         height: 16
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -409,92 +349,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96feb83a26dd74150800000000000000
-      internalID: 5856893256139009897
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Left 0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cec444421d5b1c330800000000000000
-      internalID: 3729461876300729580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Left 1
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 0
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7d2912f002baa6f0800000000000000
-      internalID: -672529477206987394
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Left 2
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 0
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75fdd2b9e4f402e40800000000000000
-      internalID: 5629586733242638167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Left 3
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 0
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4af9ea0c80dccb60800000000000000
-      internalID: 7767812757204367948
+      spriteID: 23135c28d50db1c47822316ae114bde7
+      internalID: -1698543646
       vertices: []
       indices: 
       edges: []
@@ -502,7 +358,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b1a9826be165c5747b2da07821c1250b
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -510,22 +366,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Down 2: -6388338761078672736
-      Left 1: -672529477206987394
-      Up 0: 7043811978007918041
-      Right 3: 5856893256139009897
-      Left 0: 3729461876300729580
-      Up 2: -1137364592071911362
-      Left 3: 7767812757204367948
-      Down 1: -7675304248189546062
-      Down 0: -6598946016331564889
-      Down 3: -303320121775701381
-      Right 0: 2249745419088220813
-      Up 3: -3549988229105279555
-      Right 1: 5333771517180107481
-      Left 2: 5629586733242638167
-      Right 2: -646623592477257922
-      Up 1: -7723253972256136601
+      bow_wood_8: -2082845845
+      bow_wood_1: -232191234
+      bow_wood_9: -1415349352
+      bow_wood_7: -1700944288
+      bow_wood_10: 1485772054
+      bow_wood_0: -284777981
+      bow_wood_11: -1698543646
+      bow_wood_6: -1968997592
+      bow_wood_5: 1543019395
+      bow_wood_4: 677228359
+      bow_wood_2: -100033590
+      bow_wood_3: -1593046955
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

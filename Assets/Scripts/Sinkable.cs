@@ -21,13 +21,13 @@ public class Sinkable : MonoBehaviour
         switch (biome)
         {
             case Biome.Water:
-                spriteObject.transform.localPosition = new Vector3(0, -0.2f, 0);
+                spriteObject.transform.localPosition = new Vector3(spriteObject.transform.localPosition.x, -0.2f, spriteObject.transform.localPosition.z);
                 break;
             case Biome.DeepWater:
-                spriteObject.transform.localPosition = new Vector3(0, -1f, 0);
+                spriteObject.transform.localPosition = new Vector3(spriteObject.transform.localPosition.x, -1f, spriteObject.transform.localPosition.z);
                 break;
             default:
-                spriteObject.transform.localPosition = new Vector3(0, 0, 0);
+                spriteObject.transform.localPosition = new Vector3(spriteObject.transform.localPosition.x, 0, spriteObject.transform.localPosition.z);
                 break;
         }
     }
